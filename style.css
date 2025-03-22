@@ -1,0 +1,208 @@
+body{
+    margin: 0px;
+    background-color: rgb(156, 216, 196);
+      
+}
+
+.head,.leftarm,.torso,.rightarm,.rightleg,.leftleg{
+    background-color: yellowgreen;
+    margin: 0 auto;
+}
+.head{
+    position: relative;
+    height: 150px;
+    width: 200px;
+    border-radius: 100px 100px 0 0;
+}
+.lefteye,.righteye{
+    position: absolute;
+    width: 15px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    display: inline-block;
+}
+.lefteye{
+    top: 60px;
+    margin-left: 60px;
+}
+.righteye{
+    top:60px;
+    margin-left: 120px;
+}
+.upperbody{
+    height: 250px;
+    width: 300px;
+    display: flex;
+    margin: 0 auto;
+}
+.torso{
+    width:200px;
+    height: 250px;
+    border-radius: 0 0 50px 50px;
+    background-color: yellowgreen;
+}
+.leftarm,.rightarm{
+    width: 40px;
+    height: 140px;
+    border-radius: 100px;
+    margin-top: 20px;
+}
+.leftarm{
+    margin-right: 10px;
+}
+.rightarm{
+    margin-left: 10px;
+}
+.lowerbody{
+    width: 200;
+    height: 200px;
+}
+.leftleg, .rightleg {
+    width: 40px;
+    height: 100px;
+    border-radius: 0 0 100px 100px;
+    display: inline-block;
+}
+.leftleg{
+    margin-left:47%;
+}
+.rightleg{
+    margin-right: 42%;
+}
+.robot:hover .head {
+    animation: moveHead 2s ease-in-out infinite;
+}
+
+@keyframes moveHead {
+    0% {
+        transform: translateX(-20px);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(-20px);
+    }
+}
+.robot:hover .leftarm{
+    animation: moveleftarm 2s infinite;
+}
+@keyframes moveleftarm{
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top  center;
+    }
+    25%{
+        transform: rotate(90deg);
+        transform-origin: top  center;
+    }
+    50%{
+        transform: rotate(0deg);
+        transform-origin: top  center;
+    }
+    75%{
+        transform: rotate(90deg);
+        transform-origin: top  center;
+    }
+    100%{
+        transform: rotate(0deg);
+        transform-origin: top space center;
+    }
+}
+.robot:hover .rightarm{
+    animation: moverightarm 2s infinite;
+}
+@keyframes moverightarm{
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top  center;
+    }
+    25%{
+        transform: rotate(-90deg);
+        transform-origin: top  center;
+    }
+    50%{
+        transform: rotate(0deg);
+        transform-origin: top  center;
+    }
+    75%{
+        transform: rotate(-90deg);
+        transform-origin: top  center;
+    }
+    100%{
+        transform: rotate(0deg);
+        transform-origin: top space center;
+    }
+}
+.robot:hover .leftleg{
+    animation: moveleftleg 2s infinite;
+}
+@keyframes moveleftleg{
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top  center;
+    }
+    25%{
+        transform: rotate(90deg);
+        transform-origin: top  center;
+    }
+    50%{
+        transform: rotate(0deg);
+        transform-origin: top  center;
+    }
+    75%{
+        transform: rotate(90deg);
+        transform-origin: top  center;
+    }
+    100%{
+        transform: rotate(0deg);
+        transform-origin: top space center;
+    }
+}
+.robot:hover .rightleg{
+    animation: moverightleg 2s infinite;
+}
+@keyframes moverightleg{
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top  center;
+    }
+    25%{
+        transform: rotate(-90deg);
+        transform-origin: top  center;
+    }
+    50%{
+        transform: rotate(0deg);
+        transform-origin: top  center;
+    }
+    75%{
+        transform: rotate(-90deg);
+        transform-origin: top  center;
+    }
+    100%{
+        transform: rotate(0deg);
+        transform-origin: top space center;
+    }
+}
+.robot:hover .torso{
+    animation: movetorso 2s infinite;
+}
+@keyframes movetorso{
+    0%{
+        transform: rotate(360deg);
+    }
+    25%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+    75%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
